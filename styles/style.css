@@ -40,6 +40,10 @@ main {
   background-color: #ffffff;
   border: 1px solid #e02c6d;
 }
+.banner-image:hover {
+  transform: scale(1.2) rotate(15deg) translateY(50px);
+  transition: 0.8s ease-in;
+}
 .banner-image img {
   width: 100%;
 }
