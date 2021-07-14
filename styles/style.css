@@ -38,3 +38,30 @@ body {
 .banner-image img {
   width: 100%;
 }
+
+.player-card {
+  padding: 80px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 27px;
+}
+.players .player {
+  padding: 15px 15px 33px 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 40px;
+}
+.players .player img {
+  width: 100%;
+}
+.players .player h3 {
+  color: #18191f;
+  font-weight: 700;
+  font-size: 28px;
+}
+.players .player p {
+  color: #6c6c6c;
+  font-size: 16px;
+  font-weight: 400;
+}
