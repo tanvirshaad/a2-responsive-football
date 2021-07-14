@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 0;
+  max-width: 100%;
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
@@ -11,6 +12,9 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+/* top-banner styles */
+
 .top-banner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -40,6 +44,8 @@ main {
   width: 100%;
 }
 
+/* player-card styles */
+
 .player-card {
   padding: 80px;
 }
@@ -67,11 +73,20 @@ main {
   font-weight: 400;
 }
 
+/* footer styles */
+
 footer {
   text-align: center;
 }
 footer img {
-  width: 30%;
+  max-width: 30%;
+}
+footer .icons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
 }
 footer .fab {
   color: #6c6c6c;
@@ -89,7 +104,7 @@ footer .fab {
 /* responsive css */
 @media only screen and (max-width: 688px) {
   .top-banner {
-    width: 100%;
+    max-width: 100%;
     grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 50px;
   }
@@ -99,7 +114,19 @@ footer .fab {
   .banner-image img {
     width: 100%;
   }
+  .player-card {
+    max-width: 100%;
+  }
   .players {
     grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+  }
+  footer .fab {
+    color: #6c6c6c;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 50%;
+    margin-right: 3px;
+    background: #0b0d172c;
   }
 }
